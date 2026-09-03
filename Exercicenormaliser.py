@@ -35,4 +35,4 @@ print("Code Postal :", cp_final)
 print("Téléphone :", tel_final)
 print("Email :", email_final)
 
-git commit -m "feat: add client normalization function and user input handling" 
+#fin 
