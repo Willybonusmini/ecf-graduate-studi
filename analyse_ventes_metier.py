@@ -19,7 +19,7 @@ print("--- RAPPORT D'ANALYSE DES VENTES ---")
 print(f"Total des ventes : {somme_ventes} €")
 print(f"Moyenne des ventes : {moyenne_ventes:.2f} €")
 print(f"Mois le plus performant (indice {indice_meilleur_mois}) : {meilleur_mois_valeur} €")
-
+print(f"Ventes sous la moyenne : {mois_faibles}")
 
 
 
