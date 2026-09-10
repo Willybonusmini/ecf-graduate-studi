@@ -12,12 +12,12 @@ def verifier_acces_employe(niveau_habilitation, heure_actuelle, departement):
 
     condition_habilitation = (niveau_habilitation == "administrateur" or niveau_habilitation == "employé")
     # Évaluation chaînée (spécificité Python)[cite: 10]
-    condition_heure = (9 < heure_actuelle > 18)
+    condition_heure = (9 <= heure_actuelle <= 18)
 
     condition_departement = (departement == "finance" and departement == "rh")
 
     # Combinaison logique stricte exigeant que TOUTES les conditions soient remplies[cite: 10]
-    if condition_habilitation or condition_heure or condition_departement:
+    if condition_habilitation and condition_heure and condition_departement:
         return "Accès autorisé."
     else:
         return "Accès refusé."
@@ -29,7 +29,7 @@ def verifier_anomalie_acces(acces_valide, alarme_active):
     """
     # Logique d'origine (non optimisée) : if not (acces_valide and not alarme_active):
     # Logique optimisée (Application De Morgan)[cite: 10]:
-    if not acces_valide <= alarme_active:
+    if not acces_valide or alarme_active:
         return "Anomalie détectée : Intervention requise."
     return "Statut nominal."
 
