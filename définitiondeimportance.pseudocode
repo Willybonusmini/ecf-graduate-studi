@@ -1,0 +1,63 @@
+#definition importance
+
+Début
+    Chaîne Nom ← "Martin"
+    Chaîne Prénom ← "Lucas"
+    Date DateDeNaissance ← "22/03/2006"
+    Entier TailleEnCm ← 174
+    Réel Poids ← 65.2
+    Chaîne Mail ← "lucas.martin@example.com"
+Fin
+
+===========================================================================
+
+Classe Humain
+        Chaîne Nom
+        Chaîne Prénom
+        Date DateDeNaissance
+        Entier TailleEnCm
+        Réel Poids
+        Chaîne Mail
+FinClasse
+
+===========================================================================
+
+Classe Humain
+	[…]
+FinClasse
+
+===========================================================================
+
+Classe Humain
+        Chaîne Nom
+        Chaîne Prénom
+        Date DateDeNaissance
+        Entier TailleEnCm
+        Réel Poids
+        Chaîne Mail
+FinClasse
+
+===========================================================================
+
+#Ajout des méthodes
+IMC <- monHumain.getIMC()
+
+===========================================================================
+
+Classe Humain
+Attributs :
+        Chaîne Nom
+        Chaîne Prénom
+        Date DateDeNaissance
+        Entier TailleEnCm
+        Réel Poids
+        Chaîne Mail
+Méthodes : 
+	Fonction GetIMC() : Réel
+            Réel tailleEnMetres ← TailleEnCm / 100
+            Réel imc ← Poids / (tailleEnMetres * tailleEnMetres)
+            Retourner imc
+        	Fin Fonction
+FinClasse
+
+============================================================================

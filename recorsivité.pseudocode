@@ -1,0 +1,24 @@
+Classe Personne
+    nom: chaine
+    enfants: liste de personne
+fin classe
+
+
+début
+
+
+
+fonction AfficherArbreGenealogique(humain) faire
+
+    écrireEcran(humain.nom);
+    pour chaque enfant dans humain.enfants faire
+        AfficherArbreGenealogiquepour chaque
+finfonction
+
+
+
+
+
+
+
+fin

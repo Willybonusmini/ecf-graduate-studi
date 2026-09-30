@@ -1,0 +1,34 @@
+début
+
+
+
+nbMystere: entier 
+nbMystere = nombreAléatoire entre 0 et 100
+
+
+
+AGagné: booléen
+AGné = faux
+
+NbEssai: entier
+NbEssai = 0
+
+tant que (AGagné est faux) faire
+    proposition: entier
+    écrireEcran("Quel est votre proposition ?");
+    proposition = lireClavier()
+    NbEssai = NbEssai +1
+
+    si proposition < nbMystere alors
+        écrireEcran("Votre proposition est trop petite");
+    sinonsi proposition > nbMystere allors
+        écrireEcran("Votre proposition est trop grande");
+    sinon
+        AGané = vrai
+        écrireEcran("Bravo ! Vous avez gagné avec ce score: "+ NbEssai);
+    finsi
+finfaire
+
+
+
+fin

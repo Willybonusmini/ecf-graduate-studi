@@ -1,0 +1,63 @@
+// calcul de moyen
+
+Dèbut
+
+totalnote: réel
+totalcoef: réel
+
+totalnote = 0
+totalcoef = 0
+
+//dema,der les notes à l'utilisateur
+utilisateurVeutcontinuer: booléen
+utilisateurVeutcontinuer =  vrai
+
+tant que utilisateurVeutcontinuer est vrai faire
+    note: reel
+    coef: reel 
+
+    écrireEcran("Quel est la note (ou -1 pour terminer)");
+    note = lireClavier();
+
+    si note == -1 alors
+        utilisateurVeutcontinuer = faux
+    sinonsi note > 20 alors
+        écrireEcran("La note doit être inférieur à 20");
+    sinon
+        écrireEcran("Quel est le coef ?");
+        coef = lireClavier();
+
+        totalnote = totalnote + (note * coef)
+        totalcoef = totalcoef + coef
+    finsi
+finfaire
+
+si totalcoef = 0 alors
+    écrireEcran("Le coef global ne peut pas être de 0");
+sinon
+    //calculer la moyen
+    moyenne: réel
+    moyenne =  totalnote / totalcoef
+
+    apprenciation: chaîne
+
+    si moyenne >= 16 alors
+        appreciation = "Excellent"
+    sinonsi moyenne >= 14
+        appreciation = "Très bien"
+    sinonsi moyenne >= 12
+        appreciation = "Passable"
+    sinonsi moyenne >= 10
+    sinon 
+        appreciation = "insufisant"
+    finsi
+
+    écrireEcran("Moyenne finale "+moyenne);
+    écrireEcran("Appreciation : "+Appreciation);
+finsi
+fin
+
+
+
+
+

@@ -1,0 +1,39 @@
+#Définir une fonction avec retour
+
+Fonction NomDeLaFonction(Param1, Param2)
+	// Code à exécuter
+	Résultat est un entier
+	Résultat <- 2
+	Retourner Résultat
+Fin Fonction
+
+============================================================================
+
+Fonction CalculerPrixRemise(Prix, RemisePourcentage)
+	Remise = Prix * (RemisePourcentage / 100)
+	PrixRemise = Prix - Remise
+	Retourner PrixRemise
+Fin Fonction 
+
+============================================================================
+
+Fonction CalculerPrixRemise(Prix, RemisePourcentage)
+	Remise = Prix * (RemisePourcentage / 100)
+	PrixRemise = Prix - Remise
+	Retourner PrixRemise
+Fin Fonction 
+
+===========================================================================
+
+#Appeler une fonction avec un retour
+PrixFinal1 = Appeler CalculerPrixRemise(100, 20)  // Prix : 100, Remise : 20%
+PrixFinal2 = Appeler CalculerPrixRemise(200, 15)  // Prix : 200, Remise : 15%
+ 
+//Ajout des frais de port
+FraisDePort est un entier
+FraisDePort <- 5
+PrixFinal1 = PrixFinal1 + FraisDePort;
+PrixFinal2 = PrixFinal2 + FraisDePort;
+ 
+Afficher "Le prix final pour le premier article est : " + PrixFinal1
+Afficher "Le prix final pour le deuxième article est : " + PrixFinal2

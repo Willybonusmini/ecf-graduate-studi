@@ -1,0 +1,15 @@
+#Mon premier algoritme de pseudo-code
+
+Saisissez une note (ou -1 pour terminer) : 15 
+Saisissez le coefficient correspondant : 2 
+ 
+Saisissez une note (ou -1 pour terminer) : 12 
+Saisissez le coefficient correspondant : 3 
+ 
+Saisissez une note (ou -1 pour terminer) : 18 
+Saisissez le coefficient correspondant : 1 
+ 
+Saisissez une note (ou -1 pour terminer) : -1 
+ 
+Moyenne finale : 13.5 
+Appréciation : Bien 

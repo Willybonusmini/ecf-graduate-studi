@@ -1,0 +1,23 @@
+debut
+
+    //Demander à l'utilisateur son âge
+    ageUtilisateur: entier
+    ageUtilisateur = lireClavier();
+
+    si ageUtilisateur < 18 alors
+        écrireEcran("Vous etes mineur");
+    finsi
+
+    si ageUtilisateur > 18 et ageUtilisateur < 30 alors
+        écrireEcran("Vous étes dans la vingtaine");
+    finsi
+
+    si ageUtilisateur >= 30 et ageUtilisateur < 60 alors
+        écrireEcran("Vous n'étes pas retraité");
+    sinonsi ageUtilisateur > 60 
+        écrireEcran("Vous étes peut-étre retraité");
+    finsi
+
+
+
+fin

@@ -1,0 +1,47 @@
+Début 
+
+//demander à l'utilisateur un prix, et sa remise
+
+prixârticle: réel
+remise: entier 
+
+utilisateurVeutContinuer: booléen
+utilisateurVeutContinuer = vrai
+
+prixTotal: réel
+prixTotal = 0
+
+tant que utilisateurVeutContinuer faire
+    écrireEcran("Quel est le prix de l'article ? -1 pour terminer");
+    prixArticle = lireClavier();
+    si prixArticle = *-1 alors
+        utilisateurVeutContinuer = vrai
+    sinon
+    écrireEcran("Quel est la remise appliqué ?");
+    remise = lireClavier();
+
+    appeler calculerETAfficherPrixRemise(prixArticle, remise)
+finsi
+fin tant que
+
+
+écrireEcran("voici le prix total remisé : "+prixtotal);
+prixarticle = lireClavier();
+
+écrireEcran("Quel est la remise appliqué ?");
+remise = lireClavier();
+
+Appeler = AfficherPrixRemise(prixArticle, remise)
+
+
+fonction calculerETAfficherPrixRemise(prix, remisePourcent) faire
+    prixRemise: réel
+    valeurRemise: réel
+    valeurRemise = prix * (remisePourcent / 100)
+    prixRemise = prixArticle * (remise / 100)
+    prixRemise = prixArticle - valeurRemise
+    écrireEcran("Lr prix remisé est de "+prixRemise);
+    retourne prixRemise
+fin fonction
+
+fin

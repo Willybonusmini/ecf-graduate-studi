@@ -1,0 +1,78 @@
+Classe Humain
+    Attributs : 
+        nom: chaine
+        prenom: chaine
+        dateDeNaissance: date
+        taillecm: entier
+        poids: réel
+        mail: chaine
+
+    Methodes : 
+        fonction getIMC() réel faire
+            //poids / tailles en m au carré
+            tailleM: réel
+            tailleM = taillecm / 100
+
+            imc: réel
+            imc = poids / (tailleM * tailleM)
+            retourne imc
+        fin fonction
+
+        fonction remplirobjet(anom, aprenom, adateDeNaissance, ataillecm, apoids, amail) faire
+        nom = anom
+        prenom = aprenom
+        dateDeNaissance = adateDeNaissance
+        taillecm = ataillecm
+        poids = apoids
+        mail = amail
+fin classe
+
+debut
+    humain1: Humain
+    humain1 = nouveau humain
+
+    humain1.remplirObjet("Claire", "Martin", "31/12/1972", 160, 55, "claire.Martin@mail.com")
+    
+
+    écrireEcran("IMC de "+humain1.Nom+" "+humain1.prenom" : "+humain.getIMC());
+    // IMC de Claire Martin : xx
+fin
+
+======================================================================
+
+#Comment créer un objet ?
+Début Humain humain1 ← Nouveau Humain() 
+
+======================================================================
+
+Humain humain1 = new Humain();
+
+======================================================================
+
+Début 
+Humain humain1 ← Nouveau Humain() 
+Humain humain2 ← Nouveau Humain() 
+Humain humain3 ← Nouveau Humain() 
+Fin 
+
+======================================================================
+
+humain1.Nom ← "Martin" 
+humain1.Prénom ← "Claire" 
+humain1.DateDeNaissance ← "14/11/2004"
+humain1.TailleEnCm ← 165
+humain1.Poids ← 58.3 
+humain1.Mail ← "claire.martin@example.com" 
+
+======================================================================
+
+Afficher(humain1.Nom) 
+Afficher(humain1.TailleEnCm) 
+
+======================================================================
+
+IMC ← humain1.GetIMC() 
+Afficher("L’IMC de " & humain1.Prénom & " est de " & IMC) 
+
+======================================================================
+

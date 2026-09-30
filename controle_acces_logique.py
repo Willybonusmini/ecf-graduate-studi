@@ -29,8 +29,8 @@ def verifier_anomalie_acces(acces_valide, alarme_active):
     """
     # Logique d'origine (non optimisée) : if not (acces_valide and not alarme_active):
     # Logique optimisée (Application De Morgan)[cite: 10]:
-    if not acces_valide or alarme_active:
-        return "Anomalie détectée : Intervention requise."
+    if not acces_valide or alarme_active:c
+    return "Anomalie détectée : Intervention requise."
     return "Statut nominal."
 
 # --- EXÉCUTION ET TESTS LOCAUX ---

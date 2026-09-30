@@ -1,0 +1,77 @@
+#Structure d’une fonction
+
+Fonction NomDeLaFonction
+	//Code à éxécuter ….
+Fin Fonction
+
+=====================================================
+
+#message de bien venu
+Fonction NomDeLaFonction
+	//Code à éxécuter ….
+Fin Fonction
+
+=====================================================
+
+#Définition et exécution d’une fonction
+Début
+Fonction AfficherMessageDeBienvenue
+    Afficher "Bienvenue dans notre programme !"
+Fin Fonction
+Fin
+
+=====================================================
+
+#Appeler une fonction
+Appeler une fonction
+
+=====================================================
+
+#Paramètre
+Début
+           	// Premier calcul de remise
+PrixOriginal1 = 100
+PourcentageRemise1 = 20
+Remise1 = PrixOriginal1 * (PourcentageRemise1 / 100)
+PrixRemise1 = PrixOriginal1 - Remise1
+Afficher "Le prix remisé du premier article est : " + PrixRemise1
+ 
+// Deuxième calcul de remise
+PrixOriginal2 = 200
+PourcentageRemise2 = 10
+Remise2 = PrixOriginal2 * (PourcentageRemise2 / 100)
+PrixRemise2 = PrixOriginal2 - Remise2
+Afficher "Le prix remisé du deuxième article est : " + PrixRemise2
+FIN
+
+====================================================================
+
+#Paramètre
+Fonction NomDeLaFonction(Param1, Param2)
+	//Code à éxécuter ….
+Fin Fonction
+
+====================================================================
+
+#Nous définirons deux paramètres
+Fonction CalculerPrixRemise(Prix, RemisePourcentage)
+	Remise = Prix * (RemisePourcentage / 100)
+	PrixRemise = Prix - Remise
+	Afficher "Le prix remisé est : " + PrixRemise
+Fin Fonction 
+
+====================================================================
+
+#Appeler une fonction avec des paramètres
+Appeler CalculerPrixRemise(100, 20)  // Prix : 100, Remise : 20%
+Appeler CalculerPrixRemise(200, 15)  // Prix : 200, Remise : 15%
+#arguments
+
+====================================================================
+
+#
+
+
+
+
+
